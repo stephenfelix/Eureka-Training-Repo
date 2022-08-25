@@ -1,0 +1,6 @@
+FROM ros:noetic-robot
+#WORKDIR /catkin_ws
+RUN apt-get install vim
+ADD catkin_ws /catkin_ws
+RUN echo "source ./ros_entrypoint.sh" >> $HOME/.bashrc
+ENTRYPOINT ["sleep", "infinity"]

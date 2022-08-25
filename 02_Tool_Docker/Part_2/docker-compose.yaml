@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  service-1:
+    image: "busybox:latest"
+    volumes:
+        - .:/code
+    entrypoint: echo "Here is busybox"
+  service-2:
+    image: "hello-world:latest"

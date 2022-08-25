@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  ubuntu:
+    image: "python:latest"
+    volumes:
+      - .:/worspace/repo
+    command: tail -F anything
